@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bow and arrow!</title>
+</head>
+
+<body>
+    <h1>Bow and arrow</h1> <!--Título principal da página (O maior) -->
+    <div> <!-- Cria uma divisão genérica, um espaço na página para agrupar um conteúdo -->
+        Pontuação: <span id="score"> 0 </span> - tempo: <span id="time"> 30s </span>
+        <!-- O span guarde os números que vão ser atualizados com Javascript -->
+    </div>
+
+    <button id="start-btn">Iniciar - Reniciar </button>
+    <!-- Cria botão para começar e reniciar o jogo-->
+
+<div id="game-area"> <!-- Cria o espaço da área do jogo (quadrado que ser´feito com css)-->
+<div id="target"></div> <!-- Cria o espaço para o alvo(Que é o c´rculo que será feito no css)-->
+</div>
+<script src="scritp.js"></script>
+</body>
+</html>
