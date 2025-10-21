@@ -47,3 +47,4 @@ function startGame() { // Declara a função que prepara tudo para começar uma 
 
 
 startBtn.onclick = startGame; // Código de acionamento do botão (chama a função de início de jogo)
+
