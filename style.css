@@ -14,7 +14,7 @@ background-color: rgb( 49, 122, 129); /* Define a cor de fundo da página*/
     border: 5px solid blueviolet; /* Define borda com 5 pixels  de espessura e cor solida*/
     margin: 20px auto; /* Adiciona uma margem de 20 pixels em cima e embaixo da área do jogo*/
     position: relative;/* Permite posicionar elementos dentro da área do jogo*/
-    background-color: rgb (194, 253, 240);
+    background-color: rgb(194, 253, 240);
 }
 
 #target {
@@ -37,4 +37,5 @@ background-color: #333; /* Cor de fundo do botão*/
 
 #start-btn:hover {
 background-color: #555; /* Cor de fundo do botão quando passa o mouse em cima*/
+
 }
