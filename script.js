@@ -29,9 +29,6 @@ function startGame() { // Declara a função que prepara tudo para começar uma 
     gameInterval = setInterval(countdown, 1000); // Chama a função de contagem regressiva a cada 1 segundo
 } 
 
-
-startBtn.onclick = startGame; // Código de acionamento do botão (chama a função de início de jogo)
-
 //Função de mover o alvo pra posição aleatória 
 function moveTarget() { //Declara a função responsável por posicionar o alvo em coordenadas aleatórias
     const gameArea = document.getElementById("game-area"); //Pega a área de jogo para saber seus limites
@@ -71,6 +68,9 @@ target.onclick = function() { // Define a função que será executada quando o 
     scoreDisplay.textContent = score; // Atualiza o texto do elemento de pontuação no HTML
     moveTarget(); // Move o alvo imediatamente para uma nova posição após o clique
 };
+
+startBtn.onclick = startGame; // Código de acionamento do botão (chama a função de início de jogo)
+
 
 
 
