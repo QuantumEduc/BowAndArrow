@@ -45,7 +45,7 @@ const randomX = Math.floor(Math.random() * maxX); // Atualiza a posição horizo
 const randomY = Math.floor(Math.random() * maxY); // Atualiza a posição vertical (topo) do alvo em pixels
 
 //Coloca o alvo na posição sorteada 
-target.style.left = randonX + "px"; //Atualiza a posição horizontal (esquerda) do alvo em pixels
+target.style.left = randomX + "px"; //Atualiza a posição horizontal (esquerda) do alvo em pixels
 target.style.top = randomY + "px"; //Atualiza a posição vertical do alvo em pixels
 
 // Faz o alvo aparecer (se estava escondido)
@@ -71,6 +71,7 @@ target.onclick = function() { // Define a função que será executada quando o 
     scoreDisplay.textContent = score; // Atualiza o texto do elemento de pontuação no HTML
     moveTarget(); // Move o alvo imediatamente para uma nova posição após o clique
 };
+
 
 
 
