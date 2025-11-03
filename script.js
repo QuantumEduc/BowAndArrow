@@ -10,22 +10,6 @@ const scoreDisplay = document.getElementById("score"); // Obtém o <span> onde e
 const timeDisplay = document.getElementById("time"); // Obtém o <span> onde exibimos o tempo no HTML
 const startBtn = document.getElementById("start-btn"); // Obtém o botão de iniciar/reniciar do HTML
 
-//Função de mover o alvo pra posição aleatória 
-function moveTarget() { //Declara a função responsável por posicionar o alvo em coordenadas aleatórias
-    const gameArea = document.getElementById("game-area"); //Pega a área de jogo para saber seus limites
-
-// Pega o tamanho máximo para não deixar o alvo sair da área
-const maxX = gameArea.clientWidth - target.clientWidth; // Calcula a posição X possível (largura área - largura alvo)
-const maxY = gameArea.clientHeight - target.clientHeight; // Calcula a posição Y possível(altura área - altura alvo)
-
-//Gera posições aleatórias dentro da área
-const randomX = Math.floor(Math.random() * maxX); // Atualiza a posição horizontal (esquerda) do alvo em pixels
-const randomY = Math.floor(Math.random() * maxY); // Atualiza a posição vertical (topo) do alvo em pixels
-
-// Faz o alvo aparecer (se estava escondido)
-target.style.display = "block"; // Garante que o alvo esteja visível durante o jogo
-}
-
 // Iniciar o jogo
 function startGame() { // Declara a função que prepara tudo para começar uma nova partida
 
@@ -47,6 +31,27 @@ function startGame() { // Declara a função que prepara tudo para começar uma 
 
 
 startBtn.onclick = startGame; // Código de acionamento do botão (chama a função de início de jogo)
+
+//Função de mover o alvo pra posição aleatória 
+function moveTarget() { //Declara a função responsável por posicionar o alvo em coordenadas aleatórias
+    const gameArea = document.getElementById("game-area"); //Pega a área de jogo para saber seus limites
+
+// Pega o tamanho máximo para não deixar o alvo sair da área
+const maxX = gameArea.clientWidth - target.clientWidth; // Calcula a posição X possível (largura área - largura alvo)
+const maxY = gameArea.clientHeight - target.clientHeight; // Calcula a posição Y possível(altura área - altura alvo)
+
+//Gera posições aleatórias dentro da área
+const randomX = Math.floor(Math.random() * maxX); // Atualiza a posição horizontal (esquerda) do alvo em pixels
+const randomY = Math.floor(Math.random() * maxY); // Atualiza a posição vertical (topo) do alvo em pixels
+
+//Coloca o alvo na posição sorteada 
+target.style.left = randonX + "px"; //Atualiza a posição horizontal (esquerda) do alvo em pixels
+target.style.top = randomY + "px"; //Atualiza a posição vertical do alvo em pixels
+
+// Faz o alvo aparecer (se estava escondido)
+target.style.display = "block"; // Garante que o alvo esteja visível durante o jogo
+}
+
 
 
 
