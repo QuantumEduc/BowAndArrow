@@ -1,8 +1,8 @@
 // Variáveis criadas para o jogo; valores podem ser alterados
 let score = 0; // pontuação do jogador
 let time = 30; // tempo do jogo em segundos
-let gameinterval; // Vai guardar o temporizador do tempo
-let moveinterval; // Vai guardar o temporizador do movimento do alvo
+let gameInterval; // Vai guardar o temporizador do tempo
+let moveInterval; // Vai guardar o temporizador do movimento do alvo
 
 //Elementos do HTML guardados em variáveis; valores não podem ser alterados
 const target = document.getElementById("target"); // Obtém a <div> do alvo que está no HTML
@@ -71,6 +71,7 @@ target.onclick = function() { // Define a função que será executada quando o 
     scoreDisplay.textContent = score; // Atualiza o texto do elemento de pontuação no HTML
     moveTarget(); // Move o alvo imediatamente para uma nova posição após o clique
 };
+
 
 
 
