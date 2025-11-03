@@ -19,8 +19,8 @@ const maxX = gameArea.clientWidth - target.clientWidth; // Calcula a posição X
 const maxY = gameArea.clientHeight - target.clientHeight; // Calcula a posição Y possível(altura área - altura alvo)
 
 //Gera posições aleatórias dentro da área
-const randomX = Mathf.loor(Math.random() * maxX); // Atualiza a posição horizontal (esquerda) do alvo em pixels
-const randomY = Mathf.loor(Math.random() * maxY); // Atualiza a posição vertical (topo) do alvo em pixels
+const randomX = Math.loor(Math.random() * maxX); // Atualiza a posição horizontal (esquerda) do alvo em pixels
+const randomY = Math.loor(Math.random() * maxY); // Atualiza a posição vertical (topo) do alvo em pixels
 
 // Faz o alvo aparecer (se estava escondido)
 target.style.display = "block"; // Garante que o alvo esteja visível durante o jogo
@@ -47,4 +47,5 @@ function startGame() { // Declara a função que prepara tudo para começar uma 
 
 
 startBtn.onclick = startGame; // Código de acionamento do botão (chama a função de início de jogo)
+
 
