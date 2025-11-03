@@ -65,6 +65,13 @@ function countdown() { // Declara a função que diminui o tempo e verifica o fi
     }
 }
 
+// Ao clicar no alvo
+target.onclick = function() { // Define a função que será executada quando o alvo for clicado
+    score++; // Aumenta a pontuação em 1 ponto a cada clique no alvo
+    scoreDisplay.textContent = score; // Atualiza o texto do elemento de pontuação no HTML
+    moveTarget(); // Move o alvo imediatamente para uma nova posição após o clique
+};
+
 
 
 
