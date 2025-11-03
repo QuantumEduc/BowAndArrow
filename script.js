@@ -52,6 +52,19 @@ target.style.top = randomY + "px"; //Atualiza a posição vertical do alvo em pi
 target.style.display = "block"; // Garante que o alvo esteja visível durante o jogo
 }
 
+// Contagem regressiva
+function countdown() { // Declara a função que diminui o tempo e verifica o fim do jogo
+    time--; // Diminui o tempo em 1 segundo
+    timeDisplay.textContent = time; // Atualiza o valor mostrado do tempo no HTML
+
+    if (time <= 0) { // Verifica se o tempo acabou (chegou a zero ou menor)
+        clearInterval(gameInterval); // Para o intervalo que controla a contagem de tempo
+        clearInterval(moveInterval); // Para o intervalo que move o alvo
+        target.style.display = "none"; // Esconde o alvo para indicar que o jogo terminou
+        alert("Fim de jogo! Sua pontuação foi: " + score); // Mostra uma janela com a pontuação final
+    }
+}
+
 
 
 
